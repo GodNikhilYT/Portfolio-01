@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@400;600&family=Edu+SA+Beginner:wght@500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: rgb(145, 81, 203);
+}
+.hade{
+    border: 2px solid #b031ff;
+    width: 14%;
+    border-radius: 0px 15px 15px 0px;
+    text-shadow: 2px 2px 4px rebeccapurple;
+    background-color: #ac14f9;
+    margin-top: 50px;
+    padding-left: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 2px 2px 4px black;
+    cursor: default;
+}
+.hade p{
+    font-weight: bold;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rebeccapurple;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card1{
+    border-radius: 15px;
+    width: max-content;
+    background-color: #24b0c9;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-left: 65px;
+    box-shadow: 2px 2px 4px black;
+    transition: .6s;
+    cursor: default;
+}
+.card1:hover{
+    transform: translate(0, -10%);
+    box-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+.info{
+    padding-top: 15px;
+    background-color: rgb(163, 163, 163);
+    padding-bottom: 25px;
+}
+.info h1{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+#butt1{
+    height: 30px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+#butt1 a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.list_dec{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+.section1{
+    display: flex;
+}
+@media(max-width: 753px){
+    .skillcontainer .wrapper{
+      max-width: 700px;
+    }
+    .skillcontainer  .wrapper .card{
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+    }
+  }
+  @media(max-width: 505px){
+    .skillcontainer .wrapper{
+      max-width: 500px;
+    }
+    .skillcontainer .wrapper .card{
+      width: 100%;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}

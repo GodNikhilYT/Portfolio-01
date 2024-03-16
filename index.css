@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@400;600&family=Edu+SA+Beginner:wght@500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(145, 81, 203);
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav-bar ul li a:hover {
+    color: #000000;
+}
+
+.nav-bar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-bar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-01 {
+    display: flex;
+}
+
+.nav-bar {
+    margin-top: 32px;
+    margin-left: 550px;
+}
+
+.logo_name {
+    margin-left: 40px;
+    margin-top: 12px;
+    cursor: default;
+}
+
+#first_word {
+    font-size: 54px;
+}
+
+.logo_name p {
+    font-size: 20px;
+}
+
+.owner_img {
+    border-radius: 50%;
+    height: 330px;
+    width: 330px;
+    box-shadow: 2px 2px 4px #45164b;
+    overflow: hidden;
+}
+
+.owner_img img {
+    border-radius: 50%;
+    height: 330px;
+    width: 330px;
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+/* .owner_img img:hover{ 
+    transform: scale(1.1);
+    border-radius: 10px;
+}*/
+.flex-to-main {
+    display: flex;
+}
+
+#info1,
+#info2,
+#info3 {
+    cursor: default;
+}
+
+.write_informaton {
+    margin-top: 180px;
+    margin-left: 220px;
+    margin-right: 50px;
+}
+
+.owner_img {
+    margin-top: 130px;
+    margin-left: 90px;
+    margin-right: 0;
+}
+
+/*-----------------------------SOCIAL MEDIA ICONS-----------------------------------------------*/
+.social-media_icon {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.icons ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 390px;
+}
+
+.icons ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 60px;
+    color: #000000;
+}
+
+.icons ul li a:hover {
+    font-size: 50px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+/*-----------------Download cv/resume------------------------*/
+.buttoncv{
+    margin-top: 15px;
+    margin-left: 102px;
+}
+.glow-on-hover {
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.glow-on-hover a{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+/**/
+#span010{
+    font-size: xx-large;
+}
+#span020{
+    font-size: x-large;
+    text-shadow: 2px 2px 4px rebeccapurple;
+}
+/**/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}

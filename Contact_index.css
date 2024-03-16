@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@400;600&family=Edu+SA+Beginner:wght@500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: rgb(145, 81, 203);
+}
+.hade{
+    border: 2px solid #b031ff;
+    width: 18%;
+    border-radius: 0px 15px 15px 0px;
+    text-shadow: 2px 2px 4px rebeccapurple;
+    background-color: #ac14f9;
+    margin-top: 50px;
+    padding-left: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 2px 2px 4px black;
+    cursor: default;
+}
+.hade p{
+    font-weight: bold;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rebeccapurple;
+    font-family: "Montserrat", sans-serif;
+}
+.name {
+    text-align: center;
+    cursor: default;
+}
+.name p{
+    font-size: xx-large;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rebeccapurple;
+}
+.contact_form{
+    border: 2px solid #6d0b9e;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: #8b11c8;
+    box-shadow: 2px 2px 4px #8b11c8;
+}
+.for_had{
+    padding-bottom: 20px;
+    cursor: default;
+}
+.for_had p{
+    font-family: "Montserrat", sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+label{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-right: 20px;
+
+}
+input{
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+}
+textarea{
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid black;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+button.block {
+    display: block;
+    width: fit-content;    
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 4px 15px 4px 15px;
+    border-radius: 6px;
+    /* box-shadow: 2px 2px 4px #baafbb; */
+    background-color: rgb(145, 81, 203);
+}
+button.block:hover{
+box-shadow: 2px 2px 4px #baafbb;
+}
+.margin-auto {
+    margin: 0 auto;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(107, 61, 150);
+   color: white;
+   text-align: center;
+   border-top: 1px solid rgb(88, 0, 125);
+}
+.foot ul {
+ display: flex;
+ padding-top: 18px;
+ padding-bottom: 10px;
+}
+.foot ul li{
+    line-height: 20px;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 170px;
+    /* font-size: 20px; */
+}
+#foo1_1{
+    font-size: 20px;
+    color: #310049;
+    font-weight: 600;
+    cursor: default;
+}
+#foo1_3{
+    font-size: 20px;
+    color: #310049;
+    font-weight: 600;
+    cursor: default;
+}
+#foo1_5{
+    font-size: 20px;
+    color: #310049;
+    font-weight: 600;
+    cursor: default;
+}
+#foo1_2{
+    font-size: 15px;
+    color: #2a003e;
+    font-weight: 600;
+}
+#foo1_4{
+    font-size: 15px;
+    color: #2a003e;
+    font-weight: 600;
+}
+#foo1_6{
+    font-size: 15px;
+    color: #2a003e;
+    font-weight: 600;
+}
